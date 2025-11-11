@@ -1,0 +1,8 @@
+export interface ApiResponse<T = null> {
+    success: boolean,
+    message?: string,
+    data?: T,
+    errors?: string[],
+    timestamp: Date,
+    statusCode: number
+}

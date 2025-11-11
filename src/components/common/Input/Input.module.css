@@ -1,0 +1,25 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.label{
+    font-weight: 520;
+    font-size: 1rem;
+    color: var(--primary-text-color);
+}
+
+.inputField{
+    outline: none;
+    padding: 8px 4px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-text-color);
+}
+
+.inputField:hover{
+    transition: border-color 0.3s ease-in-out;
+    border-color: var(--primary-color);
+}

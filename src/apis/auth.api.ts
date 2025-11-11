@@ -4,7 +4,7 @@ import { API_ENDPOINTS } from "../constants/api.constants";
 import type { ApiResponse } from "../types/ApiResponse";
 
 
-const login = async(loginForm: LoginRequest) : Promise<ApiResponse> => {
+export const login = async(loginForm: LoginRequest) : Promise<ApiResponse> => {
     const response = await apiClient.post(
         API_ENDPOINTS.AUTH.LOGIN,
         loginForm
@@ -12,7 +12,7 @@ const login = async(loginForm: LoginRequest) : Promise<ApiResponse> => {
     return response.data;
 }
 
-const register = async(registerForm: RegisterRequest) : Promise<ApiResponse> => {
+export const register = async(registerForm: RegisterRequest) : Promise<ApiResponse> => {
     const response = await apiClient.post(
         API_ENDPOINTS.AUTH.REGISTER,
         registerForm
